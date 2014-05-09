@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  email: MyString
+  lon: MyString
+  lat: MyString
+  size: MyString
+
+two:
+  email: MyString
+  lon: MyString
+  lat: MyString
+  size: MyString

@@ -105,6 +105,8 @@ GEM
     polyamorous (1.0.0)
       activerecord (>= 3.0)
     polyglot (0.3.4)
+    quiet_assets (1.0.2)
+      railties (>= 3.1, < 5.0)
     rack (1.4.5)
     rack-cache (1.2)
       rack (>= 0.4)
@@ -166,6 +168,7 @@ GEM
       json (>= 1.8.0)
     warden (1.2.3)
       rack (>= 1.0)
+    yaml_db (0.2.3)
 
 PLATFORMS
   ruby
@@ -173,10 +176,13 @@ PLATFORMS
 DEPENDENCIES
   activeadmin!
   coffee-rails (~> 3.2.1)
+  formtastic
   haml-rails
   jquery-rails
+  quiet_assets
   rails (= 3.2.18)
   sass-rails (~> 3.2.3)
   sqlite3
   twitter-bootstrap-rails
   uglifier (>= 1.0.3)
+  yaml_db

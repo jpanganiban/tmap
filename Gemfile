@@ -3,6 +3,9 @@ source 'http://rubygems.org'
 gem 'rails', '3.2.18'
 gem 'haml-rails'
 gem "activeadmin", github: "gregbell/active_admin"
+gem 'formtastic'
+gem 'quiet_assets'
+gem 'yaml_db'
 
 group :development do
   gem 'sqlite3'

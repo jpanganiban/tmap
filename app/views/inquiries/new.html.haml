@@ -1,0 +1,10 @@
+= semantic_form_for @inquiry do |f|
+  = f.inputs do
+    = f.input :email
+    = f.input :x, as: :hidden
+    = f.input :y, as: :hidden
+    = f.input :classification, label: "Building Classification", as: :select, collection: options_for_select(Inquiry.classifications, Inquiry.classifications.first)
+    = f.semantic_fields_for :answers do |a|
+      = a.input :answer, as: :radio, label: "#{a.object.question.question}"
+      = a.input :question_id, as: :hidden
+  = f.submit

@@ -2,6 +2,7 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.2.18'
 gem 'haml-rails'
+gem "activeadmin", github: "gregbell/active_admin"
 
 group :development do
   gem 'sqlite3'
@@ -13,4 +14,3 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
   gem 'jquery-rails'
 end
-

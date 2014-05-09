@@ -1,0 +1,13 @@
+= form_for @question, :html => {:class => 'edit-form form-horizontal', :role => 'form'} do |f|
+  .col-lg-12
+    %hr
+    %ol
+      - @questions.each do |q|
+        %li
+          = q.question
+          %br
+          = f.radio_button(:id, 'yes', :name => "question#{q.id}")
+          YES
+          = f.radio_button(:id, 'no', :name => "question#{q.id}")
+          No
+  = f.submit

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  tags: MyString
+  earthquake: 1
+  tsunami: 1
+  flooding: 1
+  landslide: 1
+
+two:
+  tags: MyString
+  earthquake: 1
+  tsunami: 1
+  flooding: 1
+  landslide: 1

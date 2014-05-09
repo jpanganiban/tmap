@@ -3,8 +3,8 @@ class Inquiry < ActiveRecord::Base
 
   @@grid = [
     (1..6).to_a,
-    (7..12).to_a,
-    (13..18).to_a
+    (1..6).to_a,
+    (1..6).to_a
   ]
 
   def self.grid

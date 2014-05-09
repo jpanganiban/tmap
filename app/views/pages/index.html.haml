@@ -2,8 +2,8 @@
 %h1 Tayuan Mo Ako Please (TMAP)
 
 %div#lands
-  - @grid.each do |r|
+  - @grid.each_with_index do |r, x|
     %div.row
-      - r.each do |l|
+      - r.each do |y|
         %div.land
-          = link_to "x", "#"
+          = link_to "x", new_inquiry_path(x: x + 1, y: y)

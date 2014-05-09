@@ -31,3 +31,9 @@
 #lands .row .land:hover {
   background-color: rgba(0,0,0,0.1);
 }
+
+body h1{
+    text-align: center;
+    text-transform: uppercase;
+    margin:10px 10px ;
+}

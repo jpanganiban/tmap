@@ -1,8 +1,8 @@
 #lands {
   background-color: #333;
-  width: 100%;
   margin: auto;
   width: 960px;
+  height: 480px;
 }
 
 #lands .row {

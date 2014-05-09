@@ -1,1 +1,9 @@
-Hello World
+= stylesheet_link_tag "grid"
+%h1 Tayuan Mo Ako Please (TMAP)
+
+%div#lands
+  - @grid.each_with_index do |r, x|
+    %div.row
+      - r.each do |y|
+        %div.land
+          = link_to "x", new_inquiry_path(x: x + 1, y: y)

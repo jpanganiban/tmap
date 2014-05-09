@@ -1,0 +1,33 @@
+#lands {
+  background-image: url('/assets/laguna.jpg');
+  margin: auto;
+  width: 960px;
+  height: 480px;
+}
+
+#lands .row {
+  clear: both;
+  width: 100%;
+}
+
+#lands .row .land {
+  float: left;
+  height: 160px;
+  width: 160px;
+  margin: 0;
+  padding: 0;
+  color: transparent;
+  text-align: center;
+  line-height: 160px;
+  color: #ccc;
+}
+
+#lands .row .land a {
+  display: block;
+  text-decoration: none;
+  color: transparent;
+}
+
+#lands .row .land:hover {
+  background-color: rgba(0,0,0,0.1);
+}

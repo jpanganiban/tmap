@@ -3,55 +3,8 @@
 %h1 Tayuan Mo Ako Please (TMAP)
 
 %div#lands
-  %div.row
-    %div.land
-      = link_to "x", "#"
-    %div.land 
-      = link_to "x", "#"
-    %div.land 
-      = link_to "x", "#"
-    %div.land 
-      = link_to "x", "#"
-    %div.land 
-      = link_to "x", "#"
-    %div.land 
-      = link_to "x", "#"
-  %div.row
-    %div.land 
-      = link_to "x", "#"
-    %div.land 
-      = link_to "x", "#"
-    %div.land 
-      = link_to "x", "#"
-    %div.land 
-      = link_to "x", "#"
-    %div.land 
-      = link_to "x", "#"
-    %div.land 
-      = link_to "x", "#"
-  %div.row
-    %div.land 
-      = link_to "x", "#"
-    %div.land 
-      = link_to "x", "#"
-    %div.land 
-      = link_to "x", "#"
-    %div.land 
-      = link_to "x", "#"
-    %div.land 
-      = link_to "x", "#"
-    %div.land 
-      = link_to "x", "#"
-  %div.row
-    %div.land 
-      = link_to "x", "#"
-    %div.land 
-      = link_to "x", "#"
-    %div.land 
-      = link_to "x", "#"
-    %div.land 
-      = link_to "x", "#"
-    %div.land 
-      = link_to "x", "#"
-    %div.land 
-      = link_to "x", "#"
+  - @grid.each do |r|
+    %div.row
+      - r.each do |l|
+        %div.land
+          = link_to "x", "#"

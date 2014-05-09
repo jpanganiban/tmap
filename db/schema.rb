@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140509192658) do
+ActiveRecord::Schema.define(:version => 20140509201028) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -62,6 +62,8 @@ ActiveRecord::Schema.define(:version => 20140509192658) do
     t.integer  "landslide"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+    t.integer  "x"
+    t.integer  "y"
   end
 
 end

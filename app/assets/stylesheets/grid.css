@@ -1,6 +1,12 @@
 #logo {text-align: center;}
-#logo img {height: 150px;}
+#logo img {height: 100px;}
 
+#border{
+    border: 1px solid black;
+    height: 150px;
+    width: 75%;
+    text-align: center;
+}
 #lands {
   background-image: url('/assets/laguna.jpg');
   margin: auto;
@@ -11,6 +17,7 @@
 #lands .row {
   clear: both;
   width: 100%;
+  margin-left: 0px;
 }
 
 #lands .row .land {
@@ -36,13 +43,15 @@
 }
 
 body {
-    background-color: deepskyblue;
+   background-color: deepskyblue;
+
 }
 
-body h1{
+div#logo span{
     text-align: center;
     text-transform: uppercase;
     margin:10px 10px ;
-    font-family: "monospace";
-
+    font-family: monospace;
+    font-size: 36px;
+    font-weight: bolder;
 }

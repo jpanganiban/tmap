@@ -1,18 +1,15 @@
 = stylesheet_link_tag "grid"
 
+%div#border
+  %div#logo
+    %span Tayuan Mo Ako Please (TMAP)
+    %img{:src => "assets/pin.png"}
 
-%div#logo
-  %img{:src => "assets/pin.png"}
-
-%h1 Tayuan Mo Ako Please (TMAP)
-
-
-
-%div#lands
-  - @grid.each_with_index do |r, x|
-    %div.row
-      - r.each do |y|
-        %div.land
-          = link_to "x", new_inquiry_path(x: x + 1, y: y)
+  %div#lands
+    - @grid.each_with_index do |r, x|
+      %div.row
+        - r.each do |y|
+          %div.land
+            = link_to "x", new_inquiry_path(x: x + 1, y: y)
 
 

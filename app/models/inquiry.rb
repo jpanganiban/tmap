@@ -1,5 +1,6 @@
 class Inquiry < ActiveRecord::Base
   attr_accessible :email, :x, :y
+  has_many :answers
 
   @@grid = [
     (1..6).to_a,

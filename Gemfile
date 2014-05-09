@@ -1,6 +1,7 @@
 source 'http://rubygems.org'
 
 gem 'rails', '3.2.18'
+gem 'haml-rails'
 
 group :development do
   gem 'sqlite3'

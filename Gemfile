@@ -5,6 +5,7 @@ gem 'haml-rails'
 gem "activeadmin", github: "gregbell/active_admin"
 gem 'formtastic'
 gem 'quiet_assets'
+gem 'yaml_db'
 
 group :development do
   gem 'sqlite3'

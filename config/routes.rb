@@ -4,6 +4,11 @@ Tmap::Application.routes.draw do
 
   root :to => 'pages#index'
 
-  resources :inquiries
+  resources :inquiries do
+  	member do
+  		get 'result'
+  	end
+  end
+  
   resources :questions
 end

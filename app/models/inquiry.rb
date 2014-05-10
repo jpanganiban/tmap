@@ -1,5 +1,9 @@
 class Inquiry < ActiveRecord::Base
-  attr_accessible :email, :x, :y, :answers_attributes, :classification
+  attr_accessible :email, :answers_attributes, :classification
+  attr_accessible :lon, :lat, :x, :y
+
+  after_create :after_create_hook
+
   has_many :answers
   accepts_nested_attributes_for :answers
 
@@ -21,5 +25,15 @@ class Inquiry < ActiveRecord::Base
 
   def self.classifications
     @@classifications
+  end
+
+  def land
+    Land.where(x: x, y: y).first
+  end
+
+  private
+  def after_create_hook
+    update_attributes(lon: land.random_lon,
+                      lat: land.random_lat)
   end
 end

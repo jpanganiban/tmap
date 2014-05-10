@@ -2,7 +2,7 @@
   %h1= @safety_display
 
   %h2 Lon: #{@inquiry.lon} Lat: #{@inquiry.lat}
-  = link_to "http://maps.google.com/maps?z=17&t=m&q=loc:#{@inquiry.lon}+#{@inquiry.lat}", "Google Maps"
+  = link_to "Google Maps", "http://maps.google.com/maps?z=17&t=m&q=loc:#{@inquiry.lon}+#{@inquiry.lat}"
 
   %ul#reasons
     - @reasons.each do |r|

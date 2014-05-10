@@ -36,6 +36,10 @@ class Inquiry < ActiveRecord::Base
     return l
   end
 
+  def tags
+    ts = answers.map { |a| a.tags }.flatten
+  end
+
   private
   def after_create_hook
     update_attributes(lon: land.random_lon,

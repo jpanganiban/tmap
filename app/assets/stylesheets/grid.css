@@ -1,13 +1,18 @@
+#logo {text-align: center;}
+#logo img {height: 100px;}
+
 #lands {
   background-image: url('/assets/laguna.jpg');
   margin: auto;
   width: 960px;
   height: 480px;
+    border: 1px solid #ffffff;
 }
 
 #lands .row {
   clear: both;
   width: 100%;
+  margin-left: 0px;
 }
 
 #lands .row .land {
@@ -30,4 +35,42 @@
 
 #lands .row .land:hover {
   /**background-color: rgba(0,0,0,0.1);**/
+}
+
+body {
+   background-color: #cccccc;
+
+}
+
+div#logo span{
+    text-align: center;
+    text-transform: uppercase;
+    margin:10px 10px ;
+    font-family: monospace;
+    font-size: 36px;
+    font-weight: bolder;
+    text-decoration-color: #ffffff;
+}
+div#footer{
+    text-align: center;
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+div#box{
+    background-color: #ff0000;
+    height: 10px;
+    margin: 0 auto;
+    width: 960px;
+    z-index: 1000;
+    margin-bottom: 14px;
+    margin-top: -58px;
+    height: 50px;
+}
+
+form fieldset.inputs {
+    width: 960px;
+    top:50%  ;
+    left : 50%;
+    margin: 100px auto;
 }

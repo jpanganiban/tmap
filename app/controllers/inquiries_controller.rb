@@ -16,6 +16,6 @@ class InquiriesController < ApplicationController
   
   def result
     @inquiry = Inquiry.find(params[:id])
-    @safety_display = !@inquiry.result.any? ? "Yes." : "No"
+    @safety_display = !@inquiry.result.any? ? "Yes." : "No."
   end
 end

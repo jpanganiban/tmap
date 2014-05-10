@@ -11,14 +11,13 @@ class InquiriesController < ApplicationController
     @inquiry.save
 
     # TODO: Redirect to page 3
-    redirect_to :root
+    redirect_to result_inquiry_path(@inquiry)
   end
   
   def result
   	begin
   		@inquiry = Inquiry.find(params[:id])
   		random_response = Random.rand(3)
-
 		case random_response
 		when 0
 			@safety_display = "Yes."
@@ -30,10 +29,5 @@ class InquiriesController < ApplicationController
   	rescue ActiveRecord::RecordNotFound => ex
   		@safety_display = "Not found."
   	end
-
-
-  	
-  	
   end
-
 end

@@ -6,6 +6,7 @@
   margin: auto;
   width: 960px;
   height: 480px;
+    border: 1px solid #ffffff;
 }
 
 #lands .row {
@@ -37,7 +38,7 @@
 }
 
 body {
-   background-color: deepskyblue;
+   background-color: #cccccc;
 
 }
 
@@ -48,9 +49,28 @@ div#logo span{
     font-family: monospace;
     font-size: 36px;
     font-weight: bolder;
+    text-decoration-color: #ffffff;
 }
 div#footer{
     text-align: center;
     font-size: 14px;
     font-weight: bolder;
+}
+
+div#box{
+    background-color: #ff0000;
+    height: 10px;
+    margin: 0 auto;
+    width: 960px;
+    z-index: 1000;
+    margin-bottom: 14px;
+    margin-top: -58px;
+    height: 50px;
+}
+
+form fieldset.inputs {
+    width: 960px;
+    top:50%  ;
+    left : 50%;
+    margin: 100px auto;
 }

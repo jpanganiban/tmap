@@ -28,7 +28,12 @@ class Inquiry < ActiveRecord::Base
   end
 
   def land
-    Land.where(x: x, y: y).first
+    l = Land.where(x: x, y: y).first
+    # XXX: Create land if it doesn't exist yet.
+    unless l
+      Land.create(x: x, y: y)
+    end
+    return l
   end
 
   private

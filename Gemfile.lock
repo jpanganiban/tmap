@@ -109,6 +109,7 @@ GEM
     mime-types (1.25.1)
     multi_json (1.10.0)
     orm_adapter (0.5.0)
+    pg (0.17.1)
     polyamorous (1.0.0)
       activerecord (>= 3.0)
     polyglot (0.3.4)
@@ -191,6 +192,7 @@ DEPENDENCIES
   haml-rails
   jquery-rails
   less-rails
+  pg
   quiet_assets
   rails (= 3.2.18)
   sass-rails (~> 3.2.3)

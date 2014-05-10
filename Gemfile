@@ -4,6 +4,7 @@ gem 'rails', '3.2.18'
 gem 'haml-rails'
 gem "activeadmin", github: "gregbell/active_admin"
 gem 'formtastic'
+gem 'formtastic-bootstrap'
 gem 'quiet_assets'
 gem 'yaml_db'
 

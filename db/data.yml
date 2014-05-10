@@ -1,5 +1,30 @@
 
 ---
+inquiries:
+  columns:
+  - id
+  - email
+  - created_at
+  - updated_at
+  - x
+  - y
+  - classification
+  - lon
+  - lat
+  - land_id
+  records: 
+  - - 1
+    - me@jpanganiban.com
+    - '2014-05-10 04:08:01.478566'
+    - '2014-05-10 04:08:01.478566'
+    - 1
+    - 3
+    - residential
+    - 14.5158
+    - 121.59079
+    - 
+
+---
 lands:
   columns:
   - id
@@ -157,3 +182,135 @@ lands:
     - 5
     - 3
     - 5
+
+---
+questions:
+  columns:
+  - id
+  - question
+  - created_at
+  - updated_at
+  - antitags
+  records: 
+  - - 1
+    - Will this be built on water?
+    - '2014-05-10 04:04:26.407709'
+    - '2014-05-10 04:04:26.407709'
+    - water
+  - - 2
+    - Will people be exposed to this place for long durations?
+    - '2014-05-10 04:05:11.029986'
+    - '2014-05-10 04:05:11.029986'
+    - toxic
+  - - 3
+    - Are you going to build a high structure?
+    - '2014-05-10 04:05:38.654496'
+    - '2014-05-10 04:05:38.654496'
+    - earthquake
+  - - 4
+    - Are you going to store flammable materials?
+    - '2014-05-10 04:06:25.339220'
+    - '2014-05-10 04:06:25.339220'
+    - residential
+
+---
+answers:
+  columns:
+  - id
+  - created_at
+  - updated_at
+  - question_id
+  - inquiry_id
+  - answer
+  records: 
+  - - 1
+    - '2014-05-10 04:08:01.494712'
+    - '2014-05-10 04:08:01.494712'
+    - 1
+    - 1
+    - true
+  - - 2
+    - '2014-05-10 04:08:01.497423'
+    - '2014-05-10 04:08:01.497423'
+    - 2
+    - 1
+    - false
+  - - 3
+    - '2014-05-10 04:08:01.498500'
+    - '2014-05-10 04:08:01.498500'
+    - 3
+    - 1
+    - false
+  - - 4
+    - '2014-05-10 04:08:01.499661'
+    - '2014-05-10 04:08:01.499661'
+    - 4
+    - 1
+    - true
+
+---
+reasons:
+  columns:
+  - id
+  - tag
+  - text
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - toxic
+    - The land area is near possible waste disposal units, toxic waste dumps, and
+      the likes. Food and residential units are not advisable to be built within the
+      area.
+    - '2014-05-10 02:08:04.936600'
+    - '2014-05-10 02:08:04.936600'
+  - - 2
+    - flammable
+    - Facilities that houses flammable materials such as fireworks factories and gas
+      stations are not advised to be built within the area. High probability of a
+      fire breakout.
+    - '2014-05-10 02:14:06.671937'
+    - '2014-05-10 02:14:06.671937'
+  - - 3
+    - water
+    - Cannot build facility on/under water.
+    - '2014-05-10 02:16:02.730847'
+    - '2014-05-10 02:16:02.730847'
+  - - 4
+    - shock
+    - 'You may experience ground shakes on ordinary times. Which is uneccessary on
+      the sorrounding '
+    - '2014-05-10 03:48:57.238302'
+    - '2014-05-10 03:48:57.238302'
+  - - 5
+    - geographic
+    - Your geographic location is not suited. Although you past all the test but some
+      factors may effect.
+    - '2014-05-10 03:52:12.118464'
+    - '2014-05-10 03:52:12.118464'
+  - - 6
+    - earthquake
+    - Your location is near a fault area which is dangerous to you
+    - '2014-05-10 03:55:26.065998'
+    - '2014-05-10 03:55:26.065998'
+  - - 7
+    - isolated
+    - Your area passed on our test but the access roads are not available in case
+      of emergency or calamity
+    - '2014-05-10 03:57:55.723776'
+    - '2014-05-10 03:57:55.723776'
+  - - 8
+    - water
+    - You can't build on water with your requirement.
+    - '2014-05-10 04:01:48.858609'
+    - '2014-05-10 04:01:48.858609'
+  - - 9
+    - flammable
+    - This area is prone to various causes of fire (ie. forest fire, explosions, etc)
+    - '2014-05-10 04:02:27.367855'
+    - '2014-05-10 04:02:27.367855'
+  - - 10
+    - residential
+    - This is a residential place. You would be harming people's lives.
+    - '2014-05-10 04:03:12.343470'
+    - '2014-05-10 04:03:12.343470'

@@ -1,2 +1,9 @@
 %div.result
   %h1= @safety_display
+
+  %ul#reasons
+    - @reasons.each do |r|
+      /= r
+      - unless r.nil?
+        %li.reason
+          = r.text

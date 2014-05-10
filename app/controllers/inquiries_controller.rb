@@ -17,5 +17,7 @@ class InquiriesController < ApplicationController
   def result
     @inquiry = Inquiry.find(params[:id])
     @safety_display = !@inquiry.result.any? ? "Yes." : "No."
+    @reasons = @inquiry.result.map { |r| Reason.find_by_tag(r) }
+    #@reasons = @inquiry.result
   end
 end

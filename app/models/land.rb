@@ -1,5 +1,6 @@
 class Land < ActiveRecord::Base
-  attr_accessible :earthquake, :flooding, :landslide, :tags, :tsunami, :x, :y
+  attr_accessible :earthquake, :flooding, :landslide, :tags, :tsunami, :x, :y,
+    :floor_limit
 
   @@min_lon = 1445000
   @@max_lon = 1460000

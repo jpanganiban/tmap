@@ -15,19 +15,7 @@ class InquiriesController < ApplicationController
   end
   
   def result
-  	begin
-  		@inquiry = Inquiry.find(params[:id])
-  		random_response = Random.rand(3)
-		case random_response
-		when 0
-			@safety_display = "Yes."
-		when 1
-			@safety_display = "No."
-		else
-			@safety_display = "Maybe."  	
-			end  			
-  	rescue ActiveRecord::RecordNotFound => ex
-  		@safety_display = "Not found."
-  	end
+    @inquiry = Inquiry.find(params[:id])
+    @safety_display = !@inquiry.result.any? ? "Yes." : "No"
   end
 end

@@ -16,4 +16,11 @@ class Land < ActiveRecord::Base
     diff = (@@max_lat - @@min_lat) / 6
     (@@min_lat + (y * diff)..@@max_lat).to_a.sample / 100000.0
   end
+
+  def parsed_tags
+    unless tags.nil?
+      return tags.split(',').map { |t| t.strip }
+    end
+    return []
+  end
 end

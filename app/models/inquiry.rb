@@ -40,6 +40,10 @@ class Inquiry < ActiveRecord::Base
     ts = answers.map { |a| a.tags }.flatten
   end
 
+  def result
+    tags & land.parsed_tags
+  end
+
   private
   def after_create_hook
     update_attributes(lon: land.random_lon,

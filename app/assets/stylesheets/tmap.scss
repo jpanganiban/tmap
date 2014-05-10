@@ -1,0 +1,27 @@
+.tmap {
+	font-family: 'Open Sans', sans-serif;
+	
+	h1 {
+		text-align: center;
+	}
+	
+	a.brand {
+	   
+	    text-decoration: none;	
+	    &:hover {
+	      text-decoration: none;
+	    }
+	  
+	}
+	
+	select {
+		clear: both;
+		display: block;
+	}
+	
+	footer {
+		
+		text-align: center;
+		//background-color: #f5f5f5;
+	}
+}

@@ -12,4 +12,5 @@
     %div.row
       - r.each do |y|
         %div.land
-          = link_to "x", new_inquiry_path(x: x + 1, y: y)
+          = link_to display_tag(@tags[x][y-1]), new_inquiry_path(x: x + 1, y: y)
+

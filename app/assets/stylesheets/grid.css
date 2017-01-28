@@ -1,9 +1,13 @@
 #lands {
+  position: relative;
   background-image: url('/assets/laguna.jpg');
   margin: auto;
   width: 960px;
   height: 480px;
+  z-index: 1;
 }
+
+
 
 #lands .row {
   clear: both;
@@ -16,7 +20,7 @@
   width: 160px;
   margin: 0;
   padding: 0;
-  color: transparent;
+  /*color: transparent;*/
   text-align: center;
   line-height: 160px;
   color: #ccc;
@@ -25,7 +29,8 @@
 #lands .row .land a {
   display: block;
   text-decoration: none;
-  color: transparent;
+  font-size: 40px;
+  /*color: transparent;*/
 }
 
 #lands .row .land:hover {
